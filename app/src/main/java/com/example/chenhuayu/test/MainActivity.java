@@ -17,6 +17,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Button btnNotification;
     private Button btnService;
     private Button btnShake;
+    private Button btnKotlin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnNotification = (Button) findViewById(R.id.btn_notification);
         btnService = (Button) findViewById(R.id.btn_service);
         btnShake = (Button) findViewById(R.id.shake);
+        btnKotlin = (Button) findViewById(R.id.first_kotlin_activity);
     }
 
     public void setOnClickListener(){
@@ -47,6 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnService.setOnClickListener(this);
         btnJs.setOnClickListener(this);
         btnShake.setOnClickListener(this);
+        btnKotlin.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +79,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.shake:
                 startActivity(new Intent(MainActivity.this, ShakeActivity.class));
+                break;
+            case R.id.first_kotlin_activity:
+                startActivity(new Intent(MainActivity.this, FirstKotlinActivity.class));
                 break;
         }
     }

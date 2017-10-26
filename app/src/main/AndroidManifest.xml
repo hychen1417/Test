@@ -58,7 +58,8 @@
         <service android:name=".service.MyService" />
         <service android:name=".service.MyIntentService" />
 
-        <activity android:name=".ShakeActivity"></activity>
+        <activity android:name=".ShakeActivity" />
+        <activity android:name=".FirstKotlinActivity"></activity>
     </application>
 
 </manifest>

@@ -53,4 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="摇一摇"/>
+    <Button
+        android:id="@+id/first_kotlin_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一个kotlin"/>
 </LinearLayout>
