@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chenhuayu.test.MyViewActivity">
+
+
+     <LinearLayout
+
+         android:id="@+id/ll"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:padding="5dp"
+         >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="MyCardView" />
+
+        <com.example.chenhuayu.test.view.MyCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#5ED6FF"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="￥2.3"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#888888" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享红包"
+                    android:textColor="#90000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="· 满18元可用"
+                    android:textColor="#80000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="· 限尾号3235手机号可用"
+                    android:textColor="#80000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="· 2016-08-29 - 2016-08-31"
+                    android:textColor="#80000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </com.example.chenhuayu.test.view.MyCardView>
+        <com.example.chenhuayu.test.view.GuaGuaKaView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"/>
+        <com.example.chenhuayu.test.view.MyPolygonView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" />
+        <com.example.chenhuayu.test.view.WaveView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp" />
+
+
+    </LinearLayout>
+</ScrollView>
