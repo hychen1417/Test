@@ -58,4 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="第一个kotlin"/>
+    <Button
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecycleView"/>
 </LinearLayout>
