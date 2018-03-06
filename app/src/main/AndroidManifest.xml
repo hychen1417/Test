@@ -60,7 +60,8 @@
 
         <activity android:name=".ShakeActivity" />
         <activity android:name=".FirstKotlinActivity" />
-        <activity android:name=".RecycleViewActivity"></activity>
+        <activity android:name=".RecycleViewActivity" />
+        <activity android:name=".ScaleImageViewActivity"></activity>
     </application>
 
 </manifest>

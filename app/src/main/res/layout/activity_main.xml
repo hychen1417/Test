@@ -1,66 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.chenhuayu.test.MainActivity"
-    android:orientation="vertical">
+    tools:context="com.example.chenhuayu.test.MainActivity">
 
-    <com.example.chenhuayu.test.view.CircleView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="#000000"
-        android:padding="20dp" />
-    <Button
-        android:id="@+id/btn_js"
-        android:text="WebView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn_mycardview"
-        android:text="自定义View"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn_greenDaoDemo"
-        android:text="GreenDao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn_kedaxunfei"
-        android:text="科大讯飞语音识别"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn_lyric"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="歌词滑动显示"/>
-    <Button
-        android:id="@+id/btn_notification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="通知"/>
-    <Button
-        android:id="@+id/btn_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Service"/>
-    <Button
-        android:id="@+id/shake"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摇一摇"/>
-    <Button
-        android:id="@+id/first_kotlin_activity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="第一个kotlin"/>
-    <Button
-        android:id="@+id/recycleView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecycleView"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.chenhuayu.test.view.CircleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btn_js"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView" />
+
+        <Button
+            android:id="@+id/btn_mycardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义View" />
+
+        <Button
+            android:id="@+id/btn_greenDaoDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GreenDao" />
+
+        <Button
+            android:id="@+id/btn_kedaxunfei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="科大讯飞语音识别" />
+
+        <Button
+            android:id="@+id/btn_lyric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="歌词滑动显示" />
+
+        <Button
+            android:id="@+id/btn_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通知" />
+
+        <Button
+            android:id="@+id/btn_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service" />
+
+        <Button
+            android:id="@+id/shake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摇一摇" />
+
+        <Button
+            android:id="@+id/first_kotlin_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第一个kotlin" />
+
+        <Button
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecycleView" />
+
+        <Button
+            android:id="@+id/scaleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scaleView" />
+    </LinearLayout>
+
+
+</ScrollView>

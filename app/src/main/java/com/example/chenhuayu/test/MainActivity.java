@@ -19,6 +19,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Button btnShake;
     private Button btnKotlin;
     private Button btnRecycleView;
+    private Button btnScaleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnShake = (Button) findViewById(R.id.shake);
         btnKotlin = (Button) findViewById(R.id.first_kotlin_activity);
         btnRecycleView = (Button) findViewById(R.id.recycleView);
+        btnScaleView = (Button) findViewById(R.id.scaleview);
     }
 
     public void setOnClickListener(){
@@ -53,6 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnShake.setOnClickListener(this);
         btnKotlin.setOnClickListener(this);
         btnRecycleView.setOnClickListener(this);
+        btnScaleView.setOnClickListener(this);
     }
 
     @Override
@@ -88,6 +91,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.recycleView:
                 startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
+                break;
+            case R.id.scaleview:
+                startActivity(new Intent(MainActivity.this, ScaleImageViewActivity.class));
                 break;
         }
     }
