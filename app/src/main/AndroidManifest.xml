@@ -61,7 +61,9 @@
         <activity android:name=".ShakeActivity" />
         <activity android:name=".FirstKotlinActivity" />
         <activity android:name=".RecycleViewActivity" />
-        <activity android:name=".ScaleImageViewActivity"></activity>
+        <activity android:name=".ScaleImageViewActivity" />
+        <activity android:name=".PicassoActivity" />
+        <activity android:name=".RequestFeatureActivity"></activity>
     </application>
 
 </manifest>

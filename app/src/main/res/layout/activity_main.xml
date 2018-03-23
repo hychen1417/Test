@@ -83,6 +83,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="scaleView" />
+
+        <Button
+            android:id="@+id/picasso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="picasso" />
+
+       <Button
+           android:id="@+id/request_feature"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="test_request_feature"/>
     </LinearLayout>
 
 
