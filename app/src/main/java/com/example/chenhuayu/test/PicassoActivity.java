@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.request.RequestOptions;
+import com.example.chenhuayu.test.glide.GlideRoundTransform;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.squareup.picasso.Picasso;
 
@@ -48,8 +52,25 @@ public class PicassoActivity extends AppCompatActivity {
         frescoVideo.setImageURI(Uri.parse(videoUri));
         //video.setImageURI(Uri.parse(videoUri)); 不能加载出来视频缩略图
 
+        testGlide();
 
 
+    }
+
+    private void testGlide(){
+        RequestOptions options = new RequestOptions()
+                .centerCrop()
+//                .placeholder(R.mipmap.ic_launcher)
+//                .error(R.mipmap.ic_launcher)//如果设置，会影响实际图片大小
+                .priority(Priority.HIGH)
+                .transform(new GlideRoundTransform(this, 8));//设置圆角
+
+        String url = "http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg";
+        ImageView imageView = (ImageView) findViewById(R.id.glide1);
+        Glide.with(this)
+                .load(url)
+                .apply(options)
+                .into(imageView);
 
     }
 }
