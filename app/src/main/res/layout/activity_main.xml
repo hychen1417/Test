@@ -95,6 +95,12 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="test_request_feature"/>
+
+        <Button
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test_toolbar"/>
     </LinearLayout>
 
 

@@ -64,7 +64,8 @@
         <activity android:name=".ScaleImageViewActivity" />
         <activity android:name=".PicassoActivity" />
         <activity android:name=".RequestFeatureActivity" />
-        <activity android:name=".MockApplicationActivity"></activity>
+        <activity android:name=".MockApplicationActivity" />
+        <activity android:name=".ToolbarActivity"></activity>
     </application>
 
 </manifest>

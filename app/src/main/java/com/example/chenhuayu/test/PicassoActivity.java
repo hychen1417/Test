@@ -13,12 +13,15 @@ import com.example.chenhuayu.test.glide.GlideRoundTransform;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
+
 public class PicassoActivity extends AppCompatActivity {
     private ImageView imageView;
     private ImageView error;
     private ImageView video;
     private SimpleDraweeView frescoVideo;
     private String videoUri = "file:////storage/emulated/0/Android/VCG42sfw30470031 (1).mp4";///storage/emulated/0/Android/VCG42sfw30470031 (1).mp4
+    private String testImgPath = "file:///storage/emulated/0/a_testImg/IMG_0197-20180201.HEIC";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +52,9 @@ public class PicassoActivity extends AppCompatActivity {
                 .into(video);
         //fresco 可以直接加载视频缩略图
         //setImageURI()
-        frescoVideo.setImageURI(Uri.parse(videoUri));
+
+        frescoVideo.setImageURI(Uri.parse(testImgPath));
+//        frescoVideo.setImageURI(Uri.parse(videoUri));
         //video.setImageURI(Uri.parse(videoUri)); 不能加载出来视频缩略图
 
         testGlide();
@@ -57,7 +62,7 @@ public class PicassoActivity extends AppCompatActivity {
 
     }
 
-    private void testGlide(){
+    private void testGlide() {
         RequestOptions options = new RequestOptions()
                 .centerCrop()
 //                .placeholder(R.mipmap.ic_launcher)

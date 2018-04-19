@@ -12,8 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.chenhuayu.test.bean.TestBean;
+import com.example.chenhuayu.test.util.StartActivityUtil;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.core.ImagePipeline;
+
+import java.util.HashMap;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -30,6 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btnScaleView;
     private Button btnPicasso;
     private Button btnTestRequestFeature;
+    private Button btnToolBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +59,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnScaleView = (Button) findViewById(R.id.scaleview);
         btnPicasso = (Button) findViewById(R.id.picasso);
         btnTestRequestFeature = (Button) findViewById(R.id.request_feature);
-
+        btnToolBar = (Button) findViewById(R.id.tool_bar);
     }
 
     public void setOnClickListener() {
@@ -72,52 +77,59 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnScaleView.setOnClickListener(this);
         btnPicasso.setOnClickListener(this);
         btnTestRequestFeature.setOnClickListener(this);
+        btnToolBar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_js:
-                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                startActivity(intent);
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, WebViewActivity.class);
                 break;
             case R.id.btn_mycardview:
-                startActivity(new Intent(MainActivity.this, MyViewActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, MyViewActivity.class);
                 break;
             case R.id.btn_greenDaoDemo:
-                startActivity(new Intent(MainActivity.this, GreenDaoDemoActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, GreenDaoDemoActivity.class);
                 break;
             case R.id.btn_kedaxunfei:
-                startActivity(new Intent(MainActivity.this, KeDaXunFeiActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, KeDaXunFeiActivity.class);
                 break;
             case R.id.btn_lyric:
-                startActivity(new Intent(MainActivity.this, LyricActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, LyricActivity.class);
                 break;
             case R.id.btn_notification:
-                startActivity(new Intent(MainActivity.this, NotificationActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, NotificationActivity.class);
                 break;
             case R.id.btn_service:
-                startActivity(new Intent(MainActivity.this, MyServiceActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, MyServiceActivity.class);
                 break;
             case R.id.shake:
-                startActivity(new Intent(MainActivity.this, ShakeActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, ShakeActivity.class);
                 break;
             case R.id.first_kotlin_activity:
 //                startActivity(new Intent(MainActivity.this, FirstKotlinActivity.class));
                 break;
             case R.id.recycleView:
-                startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, RecycleViewActivity.class);
                 break;
             case R.id.scaleview:
-                startActivity(new Intent(MainActivity.this, ScaleImageViewActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, ScaleImageViewActivity.class);
                 break;
             case R.id.picasso:
-                startActivity(new Intent(MainActivity.this, PicassoActivity.class));
+                StartActivityUtil.skipAnotherActivity(MainActivity.this, PicassoActivity.class);
                 break;
             case R.id.request_feature:
-                startActivity(new Intent(MainActivity.this, RequestFeatureActivity.class));
+                StartActivityUtil.skipAnotherActivity(this, RequestFeatureActivity.class);
                 break;
-
+            case R.id.tool_bar:
+                HashMap<String, Object> map = new HashMap<>();
+                TestBean testBean = new TestBean();
+                testBean.name = "chy";
+                testBean.password = "123456";
+                map.put("name", testBean);
+                StartActivityUtil.skipAnotherActivity(this, ToolbarActivity.class, map);
+                break;
         }
     }
 }
