@@ -101,6 +101,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="test_toolbar"/>
+
+        <Button
+            android:id="@+id/test_thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="thread"/>
     </LinearLayout>
 
 

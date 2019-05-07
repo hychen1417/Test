@@ -65,7 +65,8 @@
         <activity android:name=".PicassoActivity" />
         <activity android:name=".RequestFeatureActivity" />
         <activity android:name=".MockApplicationActivity" />
-        <activity android:name=".ToolbarActivity"></activity>
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".TestThreadActivity"></activity>
     </application>
 
 </manifest>

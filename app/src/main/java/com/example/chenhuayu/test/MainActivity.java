@@ -78,6 +78,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnPicasso.setOnClickListener(this);
         btnTestRequestFeature.setOnClickListener(this);
         btnToolBar.setOnClickListener(this);
+        findViewById(R.id.test_thread).setOnClickListener(this);
     }
 
     @Override
@@ -129,6 +130,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 testBean.password = "123456";
                 map.put("name", testBean);
                 StartActivityUtil.skipAnotherActivity(this, ToolbarActivity.class, map);
+                break;
+            case R.id.test_thread:
+                StartActivityUtil.skipAnotherActivity(this, TestThreadActivity.class);
                 break;
         }
     }
