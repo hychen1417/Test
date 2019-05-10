@@ -79,6 +79,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnTestRequestFeature.setOnClickListener(this);
         btnToolBar.setOnClickListener(this);
         findViewById(R.id.test_thread).setOnClickListener(this);
+        findViewById(R.id.animator).setOnClickListener(this);
     }
 
     @Override
@@ -133,6 +134,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.test_thread:
                 StartActivityUtil.skipAnotherActivity(this, TestThreadActivity.class);
+                break;
+            case R.id.animator:
+                StartActivityUtil.skipAnotherActivity(this, AnimatorActivity.class);
                 break;
         }
     }
