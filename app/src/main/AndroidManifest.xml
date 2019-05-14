@@ -67,7 +67,17 @@
         <activity android:name=".MockApplicationActivity" />
         <activity android:name=".ToolbarActivity" />
         <activity android:name=".TestThreadActivity" />
-        <activity android:name=".AnimatorActivity"></activity>
+        <activity android:name=".AnimatorActivity" />
+        <activity
+            android:name=".TestLaunchModeActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.task1"/>
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.task1"/>
+        <activity android:name=".ThirdActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.task1"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.chenhuayu.test;
 
 import android.app.Activity;
+import android.app.LauncherActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -80,6 +81,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnToolBar.setOnClickListener(this);
         findViewById(R.id.test_thread).setOnClickListener(this);
         findViewById(R.id.animator).setOnClickListener(this);
+        findViewById(R.id.launch_mode).setOnClickListener(this);
     }
 
     @Override
@@ -137,6 +139,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.animator:
                 StartActivityUtil.skipAnotherActivity(this, AnimatorActivity.class);
+                break;
+            case R.id.launch_mode:
+                StartActivityUtil.skipAnotherActivity(this, SecondActivity.class);
                 break;
         }
     }
