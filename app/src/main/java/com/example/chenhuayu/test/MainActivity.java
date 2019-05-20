@@ -141,7 +141,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 StartActivityUtil.skipAnotherActivity(this, AnimatorActivity.class);
                 break;
             case R.id.launch_mode:
-                StartActivityUtil.skipAnotherActivity(this, SecondActivity.class);
+                StartActivityUtil.skipAnotherActivity(this, ExpandClickAreaActivity.class);
                 break;
         }
     }

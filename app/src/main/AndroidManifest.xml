@@ -71,13 +71,16 @@
         <activity
             android:name=".TestLaunchModeActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.example.task1"/>
-        <activity android:name=".SecondActivity"
+            android:taskAffinity="com.example.task1" />
+        <activity
+            android:name=".SecondActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.example.task1"/>
-        <activity android:name=".ThirdActivity"
+            android:taskAffinity="com.example.task1" />
+        <activity
+            android:name=".ThirdActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.example.task1"></activity>
+            android:taskAffinity="com.example.task1" />
+        <activity android:name=".ExpandClickAreaActivity"></activity>
     </application>
 
 </manifest>
