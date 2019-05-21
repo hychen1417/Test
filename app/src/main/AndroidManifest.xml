@@ -80,7 +80,8 @@
             android:name=".ThirdActivity"
             android:launchMode="singleTask"
             android:taskAffinity="com.example.task1" />
-        <activity android:name=".ExpandClickAreaActivity"></activity>
+        <activity android:name=".ExpandClickAreaActivity" />
+        <activity android:name=".MTDYActivity"></activity>
     </application>
 
 </manifest>
