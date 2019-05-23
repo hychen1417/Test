@@ -81,7 +81,8 @@
             android:launchMode="singleTask"
             android:taskAffinity="com.example.task1" />
         <activity android:name=".ExpandClickAreaActivity" />
-        <activity android:name=".MTDYActivity"></activity>
+        <activity android:name=".MTDYActivity" />
+        <activity android:name=".ScrollViewActivity"></activity>
     </application>
 
 </manifest>
