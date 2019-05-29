@@ -8,17 +8,18 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class ThirdActivity extends AppCompatActivity {
-    private final static String TAG = "ThirdActivity";
+public class FourActivity extends AppCompatActivity {
+
+    private final static String TAG ="FourActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_four);
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ThirdActivity.this, FourActivity.class));
+                startActivity(new Intent(FourActivity.this, SecondActivity.class));
             }
         });
     }
